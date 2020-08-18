@@ -59,7 +59,10 @@
                                 <rect key="frame" x="191" y="182" width="187" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onEdit:" destination="BYZ-38-t0r" eventType="editingChanged" id="C1h-MJ-W32"/>
+                                </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CLd-RY-BPO">
                                 <rect key="frame" x="20" y="344" width="374" height="32"/>
@@ -79,6 +82,12 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tippy" id="bYy-GX-c4d"/>
+                    <connections>
+                        <outlet property="billField" destination="4YA-lZ-6Um" id="cmR-va-Ykj"/>
+                        <outlet property="tipControl" destination="CLd-RY-BPO" id="Ixa-m6-tel"/>
+                        <outlet property="tipLabel" destination="NXG-b7-cfC" id="LHy-jV-09K"/>
+                        <outlet property="totalLabel" destination="PU4-Xs-fJy" id="ZAr-vw-2pq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="11U-5b-gh7">

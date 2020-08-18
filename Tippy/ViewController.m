@@ -19,5 +19,9 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)onTap:(id)sender {
+    NSLog(@"Dismiss Keyboard");
+    [self.view endEditing:YES]; // java: this.view.endEditing(true);
+}
 
 @end
